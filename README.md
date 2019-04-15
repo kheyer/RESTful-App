@@ -1,4 +1,4 @@
-# Item Catalog Project
+# RESTful Web Application
 
 This project runs a RESTful Flask application serving content stored in a SQL database. The app implements CRUD functionality protected by OAuth2, implemented for Google accounts. App content can also be accessed through a JSON endpoint.
 
@@ -6,7 +6,7 @@ This project runs a RESTful Flask application serving content stored in a SQL da
 
 `app.py` runs the Flask application
 
-`client_secrets.json` contains information for the OAuth2 token
+`client_secrets_fake.json` example of an OAuth2 token used for authentication. A real token must be generated to run the application with full login support
 
 `database_setup.py` sets up the SQL database
 
@@ -16,21 +16,27 @@ This project runs a RESTful Flask application serving content stored in a SQL da
 
 `/static` contains css files for the app
 
-## Vagrant Setup
+# Setup
 
-This app is designed to run on a Vagrant virtual machine. To set up the VM: 
+## OAuth2 Through Google Sign-In
 
-1. Install [Vagrant](https://www.vagrantup.com/downloads.html)
-2. Install [Virtual Box](https://www.virtualbox.org/)
-3. Download the [Vagrant Configuration File](https://github.com/udacity/fullstack-nanodegree-vm/blob/master/vagrant/Vagrantfile)
-4. In the terminal, run `vagrant up`
-5. In the terminal, run `vagrant ssh`
+To implement OAuth2 sign-in through google, you need a proper Client ID from [Google](https://console.developers.google.com/apis/credentials). A real auth token is not provided in the repository. Once an authentication token is acquired, it should be configured to work with port 5000.
 
+   * Add `http://localhost:5000` to `Authorized JavaScript origins`
+   * Add `http://localhost:5000/gconnect` to `Authorized redirect URIs`
+   * Add `http://localhost:5000/login` to `Authorized redirect URIs`
+   
+The configured token should be downloaded as a json file and placed in the `app.py` directory
+
+## Database Setup
+
+Run the following to create the sqlite database and populate it with some initial items:
+   * `python database_setup.py`
+   * `python database_populate.py`
 
 ## Running the Application
-Once the VM is set up, run the following to start the app:
 
-1. `python database_setup.py`
-2. `python database_populate.py`
-3. `python app.py`
-4. Navigate to `http://localhost:5000/`
+Once the database setup is complete, start the app by doing the following:
+
+   * `python app.py`
+   * Navigate to `http://localhost:5000/` in a browser
