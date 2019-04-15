@@ -1,0 +1,75 @@
+{"Users": [
+    {
+    "name": "Gladys Ramirez",
+    "picture": "https://dummyimage.com/600x400/000/000",
+    "email": "gladys.ramirez11@example.com"
+    },
+    {
+    "name": "Jessica Jones",
+    "picture": "https://dummyimage.com/600x400/000/000",
+    "email": "jessica.jones83@example.com"
+    }],
+"Categories": [
+    {
+    "name": "Feedforward Networks",
+    "user_id": 1
+    },
+    {
+    "name": "Recurrent Networks",
+    "user_id": 2
+    },
+    {
+    "name": "Convolutional Networks",
+    "user_id": 3
+    }],
+"Items": [
+    {
+    "name": "Linear Layer",
+    "date": null,
+    "picture": "https://i.stack.imgur.com/iHW2o.jpg",
+    "description": "A simple linear layer",
+    "category_id": 1,
+    "user_id": 1
+    },
+    {
+    "name": "Recurrent Neural Network",
+    "date": null,
+    "picture": "http://corochann.com/wp-content/uploads/2017/05/rnn1_expand.png",
+    "description": "A basic RNN",
+    "category_id": 2,
+    "user_id": 1
+    },
+    {
+    "name": "GRU",
+    "date": null,
+    "picture": "https://cdn-images-1.medium.com/max/1600/0*7CvKTm5BHkjV_jrt.png",
+    "description": "A gated recurrent unit",
+    "category_id": 2,
+    "user_id": 1
+    },
+    {
+    "name": "LSTM",
+    "date": null,
+    "picture": "http://colah.github.io/posts/2015-08-Understanding-LSTMs/img/LSTM3-var-GRU.png",
+    "description": "A long short term memory unit",
+    "category_id": 2,
+    "user_id": 1
+    },
+    {
+    "name": "Convolutional Network",
+    "date": null,
+    "picture": "https://cdn-images-1.medium.com/max/1600/1*EuSjHyyDRPAQUdKCKLTgIQ.png",
+    "description": "Convolutional neural network",
+    "category_id": 3,
+    "user_id": 1
+    },
+    {
+    "name": "Residual Network",
+    "date": null,
+    "picture": "https://www.oreilly.com/library/view/building-machine-learning/9781786466587/graphics/image_08_008.jpg",
+    "description": "Resnet",
+    "category_id": 3,
+    "user_id": 1
+    }
+]}
+

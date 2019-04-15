@@ -1,0 +1,27 @@
+{% extends "main.html" %}
+{% block content %}
+{% include "header.html" %}
+
+<section id="deleteItem">
+    <div class="container padding-1-5">
+        <h1>Delete Item</h1>
+        <p class="padding-top-10">
+            Are you sure you want to delete {{item.name}}?
+        </p>
+
+        <form action="{{url_for('deleteItem', category_name = item.category.name, item_name = item.name)}}" method = "post">
+            <div class="form-group padding-top-10">
+                <button type="submit" id="submit" class="btn btn-cancel">
+                    Delete
+                </button>
+                <a href="{{url_for('showCategory', category_name = item.category.name)}}">
+                    <button type="button" class="btn btn-save">
+                        Cancel
+                    </button>
+                </a>
+            </div>
+        </form>
+    </div>
+</section>
+
+{% endblock %}

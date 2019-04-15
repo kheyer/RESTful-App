@@ -1,0 +1,40 @@
+{% extends "main.html" %}
+{% block content %}
+{% include "header.html" %}
+
+<section id="itemDetail">
+    <div class="container">
+        <div class="row">
+            {% include "flash_messages.html" %}
+            {% include "category_list.html" %}
+            <div class="col-md-9 padding-top-49">
+                <div style="padding-top: 15px; padding-left: 20px;">
+                    <a href="{{url_for('showCategory', category_name = item.category.name,)}}">
+                        Return to Category
+                    </a>
+                    <img class="img-display" src="{{ item.picture }}" alt="{{ item.name }}">
+                    <div style="padding-left: 25px;">
+                        <h4 class="edit-link">
+                            {{ item.name }}
+                        </h4>
+                        <p>
+                            {{ item.description }}
+                        </p>
+                        <h6 class="edit-link">
+                            <a href = "{{url_for('editItem', category_name = item.category.name, item_name = item.name)}}">
+                                Edit
+                            </a>
+                        </h6>
+                        <h6>
+                            <a href = "{{url_for('deleteItem', category_name = item.category.name, item_name = item.name)}}">
+                                Delete
+                            </a>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

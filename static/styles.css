@@ -1,0 +1,146 @@
+* {
+	font-family: "Helvetica Neue Bold", Roboto, Helvetica, Arial, sans-serif;
+	font-weight: 700;
+}
+
+h1 {
+	font-family: "Helvetica Neue Light", Roboto, Helvetica, Arial, sans-serif;
+	font-size: 50px;
+	color: #51453B;
+	line-height: 60px;
+	font-weight: 300;
+}
+
+h3 {
+	font-family: "Helvetica Neue Light", Roboto, Helvetica, Arial, sans-serif;
+	font-size: 24px;
+	color: #51453B;
+	line-height: 1.1;
+	font-weight: 500;
+}
+
+ p {
+ 	font-family: "Helvetica Neue", Roboto, Helvetica, Arial, sans-serif;
+ 	font-size: 16px;
+ 	color: #7B7573;
+ 	line-height: 24px;
+ 	font-weight: 400;
+ }
+
+ strong {
+ 	font-size: 16px;
+ 	color: #7B7573;
+ 	line-height: 24px;
+ }
+
+ a {
+ 	font-size: 14px;
+ 	color: #0093B9;
+ 	line-height: 17px;
+ }
+
+ .h2-left {
+     align: left;
+ }
+
+.top-menu {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.navbar-margin-btn {
+	top: 0;
+	right: 0;
+}
+
+.login-btn {
+	padding: 10px;
+	margin: 0;
+	border-color: rgb(12, 12, 11);
+	border-width: 2px;
+	color: rgb(12, 12, 11);;
+}
+.btn {
+	padding: 20px;
+	margin: 0;
+	border-color: rgb(12, 12, 11);
+	border-width: 2px;
+	color: rgb(12, 12, 11);;
+}
+
+.btn-save {
+    background-color: #428bca;
+    padding: 10px;
+}
+
+.btn-cancel {
+    background-color: #d9534f;
+    padding: 10px;
+}
+
+.banner.main {
+	height: 100px;
+}
+
+.padding-top {
+	padding-top: 30px;
+}
+.padding-bottom {
+	padding-bottom: 30px;
+}
+.padding-none {
+	padding: 0;
+}
+
+.category-list {
+    background-color: #F0F0F0;
+    padding: 20px;
+}
+.category-list:hover {
+   background-color: #9092eb;
+    padding: 20px;
+}
+
+.img-display {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+	margin-right: auto;
+	padding-top: 20px;
+}
+
+.top-menu a {
+	margin-bottom: 0;
+	line-height: 16px;
+	font-size: 16px;
+	color: #7B7573;
+	font-weight: 400;
+}
+
+.glyphicon {
+	margin-right: 10px;
+}
+
+.flash {
+	background-color: rgb(32, 34, 32);
+	width:100%;
+    text-decoration: none;
+
+}
+
+.flash li {
+	list-style-type: none;
+    text-align: center;
+    line-height: 40px;
+    padding-top: 6px;
+}
+
+.flash strong {
+    font-size: 30px;
+    color: #b9b9b9
+}
+
+.edit-link {
+	padding-top: 15px
+}
