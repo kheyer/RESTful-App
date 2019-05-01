@@ -40,3 +40,8 @@ Once the database setup is complete, start the app by doing the following:
 
    * `python app.py`
    * Navigate to `http://localhost:5000/` in a browser
+   
+   
+## Deployment on Ubuntu Server
+
+The application is deployed to an Ubuntu server on AWS Lightsail. For deployment details, see the [Unix Server Deployment](https://github.com/kheyer/unix-server-configuration) repo.
